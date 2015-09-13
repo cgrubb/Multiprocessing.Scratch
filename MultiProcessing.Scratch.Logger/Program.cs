@@ -1,4 +1,4 @@
-﻿namespace MultiProcessing.Scratch.FirstWorker
+﻿namespace MultiProcessing.Scratch.Logger
 {
   using System;
   using System.Collections.Generic;
@@ -7,23 +7,19 @@
   using System.Threading;
   using System.Threading.Tasks;
 
-  /// <summary>
-  /// Worker process
-  /// </summary>
   public class Program
   {
     /// <summary>
-    /// Worker process main method
+    /// Logger main method
     /// </summary>
     /// <param name="args">Command line arguments</param>
     public static void Main(string[] args)
     {
-      //// Phone home
       while (true)
       {
-        //// Spin uselessly
+        //// Eventually do some logging stuff here
+        //// for now we spin uselessly
         Thread.Sleep(10);
-        //// wait for exit signal or kill
       }
     }
   }

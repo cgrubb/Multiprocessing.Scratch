@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9F2C6C8-2E66-4A80-8C08-DA3DF60A24F0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{93007171-896A-435B-94C1-CC8E75FBC896}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Multiprocessing.Scratch</RootNamespace>
-    <AssemblyName>Multiprocessing.Scratch</AssemblyName>
+    <RootNamespace>MultiProcessing.Scratch.Master</RootNamespace>
+    <AssemblyName>MultiProcessing.Scratch.Master</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Host.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MultiProcessing.Scratch.FirstWorker\MultiProcessing.Scratch.FirstWorker.csproj">
-      <Project>{04f15e2d-5f2d-4f4f-8437-c88b53625fa9}</Project>
-      <Name>MultiProcessing.Scratch.FirstWorker</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MultiProcessing.Scratch.Logger\MultiProcessing.Scratch.Logger.csproj">
-      <Project>{fc2a8ceb-143d-47fa-8860-95d059be2308}</Project>
-      <Name>MultiProcessing.Scratch.Logger</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MultiProcessing.Scratch.Master\MultiProcessing.Scratch.Master.csproj">
-      <Project>{93007171-896a-435b-94c1-cc8e75fbc896}</Project>
-      <Name>MultiProcessing.Scratch.Master</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
