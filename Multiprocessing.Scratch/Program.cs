@@ -8,12 +8,18 @@
   using System.Diagnostics;
   using System.IO;
   using MultiProcessing.Scratch.Master;
+  using System.Threading;
 
   /// <summary>
   /// Main program
   /// </summary>
   public class Program
   {
+    /// <summary>
+    /// Exit flag
+    /// </summary>
+    private static bool interrupted = false;
+
     /// <summary>
     /// Main program method
     /// </summary>

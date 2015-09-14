@@ -37,6 +37,14 @@
     }
 
     /// <summary>
+    /// Thread for monitoring processes
+    /// </summary>
+    private void ProcessMon()
+    {
+
+    }
+
+    /// <summary>
     /// Start the processes and monitor them
     /// </summary>
     private void Master()
@@ -58,7 +66,7 @@
       {
         var processList = processes.Keys.ToList();
         foreach (var process in processList)
-        {
+        {          
           if (process.HasExited)
           {
             var newProcess = StartProcess(processes[process]);
