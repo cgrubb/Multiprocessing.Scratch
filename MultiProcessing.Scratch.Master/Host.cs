@@ -49,6 +49,7 @@
     /// </summary>
     private void Master()
     {
+      using (var context = NetMQContext.Create)
       //// Start processes
       var processPath = AppDomain.CurrentDomain.BaseDirectory;
       var workerPath = Path.Combine(processPath, "MultiProcessing.Scratch.FirstWorker.exe");

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProcessing.Scratch.Log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiProcessing.Scratch.Master", "MultiProcessing.Scratch.Master\MultiProcessing.Scratch.Master.csproj", "{93007171-896A-435B-94C1-CC8E75FBC896}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiprocessing.Scratch.Core", "Multiprocessing.Scratch.Core\Multiprocessing.Scratch.Core.csproj", "{36AC4525-034F-4D53-8F91-9ACC38A9F43E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{93007171-896A-435B-94C1-CC8E75FBC896}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93007171-896A-435B-94C1-CC8E75FBC896}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93007171-896A-435B-94C1-CC8E75FBC896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AC4525-034F-4D53-8F91-9ACC38A9F43E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AC4525-034F-4D53-8F91-9ACC38A9F43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AC4525-034F-4D53-8F91-9ACC38A9F43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AC4525-034F-4D53-8F91-9ACC38A9F43E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
