@@ -8,6 +8,7 @@
   using System.Threading;
   using System.Diagnostics;
   using System.IO;
+  using NetMQ;
 
   /// <summary>
   /// Control the processes
@@ -49,9 +50,12 @@
     /// </summary>
     private void Master()
     {
-      using (var context = NetMQContext.Create)
-      //// Start processes
-      var processPath = AppDomain.CurrentDomain.BaseDirectory;
+      using (var context = NetMQContext.Create())
+      {
+
+      }
+        //// Start processes
+        var processPath = AppDomain.CurrentDomain.BaseDirectory;
       var workerPath = Path.Combine(processPath, "MultiProcessing.Scratch.FirstWorker.exe");
       var firstWorker = StartProcess(workerPath);
       var loggerPath = Path.Combine(processPath, "MultiProcessing.Scratch.Logger.exe");
